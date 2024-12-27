@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/todo.css">
+</head>
+<body>
+
+
+
+    
+    <div id="header">TO DO LIST</div>
+    <div id="bar">
+        <div class="todo" id="todo1">to do
+            <button onClick="pop()">add</button>
+        </div>
+        <div class="todo" id="inprog">in progress
+            <button onClick="pop()">add</button>
+        </div>
+        <div class="todo" id="done"> done
+            <button onClick="pop()">add</button>
+        </div>
+    </div>
+
+
+    <div id="pol"> 
+        <button id="x" onclick="hide()"></button>
+        <h1 style="text-align: center;">add task</h1>
+        <div id="title_box">
+            <h3>title</h3>
+            <input type="text" id="title">
+        </div>
+        <div id="desc_box">
+            <h3>description</h3>
+            <input type="text" id="desc">
+        </div>
+        <div id="status_box">
+            <h3>status</h3>
+        <button id="status" onclick="choice()"></button>
+        <div id="choices">
+            <div id="choices1" onclick="sub()">to do</div>
+            <div id="choices2" onclick="sub()"> in progress</div>
+            <div id="choices3" onclick="sub()">done</div>
+        </div>
+        </div>
+  
+
+       
+        
+   
+
+    </div>
+    
+
+    <script src="leet.js"></script>
+
+
+
+</body>
+</html>
