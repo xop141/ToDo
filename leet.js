@@ -58,14 +58,19 @@ function print() {
     
   } else if(ar[i].prior == 3){
     let newE = document.createElement ("div")
-  
+    newE.addEventListener("dblclick", function() {
+      newE.remove(); 
+      ar.splice(i, 1); 
+    });
+    newE.id = "created"
     document.getElementById ("add_container3").appendChild(newE)
     newE.innerHTML = `
     <strong>Title:</strong> ${ar[i].name} <br> 
     <strong>Description:</strong> ${ar[i].description} <br>
     <strong>priority:</strong> ${ar[i].class}
   `;
-  newE.id = "created"
+ 
+  
   }else if(ar[i].prior == 4){
     let newE = document.createElement ("div")
    
