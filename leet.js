@@ -48,7 +48,10 @@ function print() {
     let newE = document.createElement ("div")
    
     document.getElementById ("add_container2").appendChild(newE)
-    
+    newE.addEventListener("dblclick", function() {
+      newE.remove(); 
+      ar.splice(i, 1); 
+    });
     newE.innerHTML = `
     <strong>Title:</strong> ${ar[i].name} <br> 
     <strong>Description:</strong> ${ar[i].description} <br>
@@ -73,7 +76,10 @@ function print() {
   
   }else if(ar[i].prior == 4){
     let newE = document.createElement ("div")
-   
+    newE.addEventListener("dblclick", function() {
+      newE.remove(); 
+      ar.splice(i, 1); 
+    });
     document.getElementById ("add_container4").appendChild(newE)
     newE.innerHTML = `
     <strong>Title:</strong> ${ar[i].name} <br> 
