@@ -1,137 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
-    width: 100%;
-    height: 100%;
-    background-color: beige;
+    
+   
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     
 }
-#bar{
-    width: 80%;
+#background{
+    width: 1400px;
     height: 800px;
-    background-color: blanchedalmond;
-    display: flex;
-    justify-content: space-between;
+   
+    position: relative;
+}
+#click{
+    width: 1400px;
+    height: 800px;
+    background-color: red;
+    position: relative; 
 }
 #header{
-    width: 80%;
-    height: 200px;
-    background-color: antiquewhite;
+    width: 100%;
+    height: 100px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 120px;
-  
+    font-size: 80px;
 }
-.todo{
-    width: 25%;
-    height: min-content;
-    background-color: tan;
+.bar{
+    width: 20%;
+    height: max-content;
+    
+    border-radius: 15px;
     display: flex;
-    gap: 20px;
     flex-direction: column;
-
-    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+#bar_container{
+    width: 100%;
+    height: min-content;
+    
+    display: flex;
     justify-content: space-between;
+    align-items: start;
 
-
-}
-.button{
-    width: 100%;
-    height: 50px;
-}
-#pol{
-    width: 500px;
-    height: 800px;
-    background-color: aqua;
-   position: absolute;
-   top: 100px;
-   display: none;
-   display: flex;
-   flex-direction: column;
- justify-content: space-between ;
-
-display: none;
-
-}
-#title_box{
-    width: 100%;
-    height: 200px;
-    background-color: blue;
-}
-#desc_box{
-    width: 100%;
-    height: 200px;
-    background-color: blue;
-}
-#desc{
-    width: 90%;
-    height: 70%;
-}
-#sub{
-    width: 60%;
-    height: 5%;
     
 }
-#x{
+#add_button{
+    width: 90%;
+    height: 20px;
+}
+#bar_container span{
+    font-size: 25px;
+}
+#pop_page{
+    width: 400px;
+    height: 600px;
+    background-color: wheat;
+    border-radius: 15px;
+    position: absolute;
+    top: 15%;
+    left: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#exit{
     width: 30px;
     height: 30px;
     background-color: red;
 }
-#status_box{
-    width: 100%;
-height: 200px;
 
-display: flex;
-justify-content: center;
-flex-direction: column  ;
-
-}
-#status{
-    width: 70%;
-    height: 50px;
-}
-#choices{
-    width: 100%;
-    height: 200px;
-
-    position: absolute;
-    top: 70%;
-display: none;
-  
-    text-align: center;
-    font-size: 30px;
-   background-color: ghostwhite;
-}
-#choices1{
-    width: 100%;
-    height: 25%;
-
-}
-#choices2{
-    width: 100%;
-    height: 25%;
-
-}
-#choices3{
-    width: 100%;
-    height: 25%;
-   
-}
-#choices1:hover{
-    background-color: gray;
-}
-#choices2:hover{
-    background-color: gray;
-}
-#choices3:hover{
-    background-color: gray;
-}
-#newT{
+#add_task_button{
     width: 90%;
     height: 50px;
-    background-color: blueviolet;
+    background-color: gray;
     border-radius: 15px;
+}
+.choice{
+    width: 100%;
+    height: 25px;
+    background-color: antiquewhite;
+    
+}
+#pop_page span{
+    font-size: 25px;
+}
+#pop_container{
+    width: 100%;
+    height: 80px;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
 
+
+.choice_container{
+    width: 100%;
+    height: 25px;
+  
+    
+    display: flex;
+    flex-direction: column;
+}
+.choice_container button{
+   display: none;
+}
+.choice_container:hover button{
+    display: flex;
+}
+#add_container1{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    
+}
+#add_container2{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+#add_container3{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+#add_container4{
+    
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#created{
+    width: 200px;
+    height: 100px;
+    background-color: wheat;
+    font-size: 15px;
 }

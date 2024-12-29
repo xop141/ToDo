@@ -7,56 +7,83 @@
     <link rel="stylesheet" href="/todo.css">
 </head>
 <body>
-
-
-
-    
-    <div id="header">TO DO LIST</div>
-    <div id="bar">
-        <div class="todo" id="todo1">to do
-            <button onClick="pop()">add</button>
-        </div>
-        <div class="todo" id="inprog">in progress
-            <button onClick="pop()">add</button>
-        </div>
-        <div class="todo" id="done"> done
-            <button onClick="pop()">add</button>
-        </div>
-    </div>
-
-
-    <div id="pol"> 
-        <button id="x" onclick="hide()"></button>
-        <h1 style="text-align: center;">add task</h1>
-        <div id="title_box">
-            <h3>title</h3>
-            <input type="text" id="title">
-        </div>
-        <div id="desc_box">
-            <h3>description</h3>
-            <input type="text" id="desc">
-        </div>
-        <div id="status_box">
-            <h3>status</h3>
-        <button id="status" onclick="choice()"></button>
-        <div id="choices">
-            <div id="choices1" onclick="sub()">to do</div>
-            <div id="choices2" onclick="sub()"> in progress</div>
-            <div id="choices3" onclick="sub()">done</div>
-        </div>
-        </div>
-  
-
-       
+    <div id="background">
         
-   
+            
+            <div id="header">
+                <span>to do list</span>
+            </div>
+
+            <div id="bar_container">
+                <div class="bar" id="To_do">
+                    <span>to do</span>
+                    <div id="add_container1"></div>
+                    <button id="add_button" onclick="pop()" >add card</button>
+                </div>
+                <div class="bar" id="In_prog">
+                    <span>in progress</span>
+                    <div id="add_container2"></div>
+                    <button id="add_button" onclick="pop()" >add card</button>
+                </div>
+                <div class="bar" id="Stuck">
+                    <span>stuck</span>
+                    <div id="add_container3"></div>
+                    <button id="add_button" onclick="pop()">add card</button>
+                </div>
+                <div class="bar" id="Done">
+                    <span>done</span>
+                    <div id="add_container4"></div>
+                    <button id="add_button" onclick="pop()">add card</button>
+                </div> 
+            </div>
+
+
+
+            <div id="pop_page">
+                <div id="pop_container">
+                    <span>add task</span>
+                </div>
+                
+                <div id="pop_container">
+                    <span>title</span>
+                    <input type="text" id="Title">
+                </div>
+                <div id="pop_container">
+                
+                    <span>description</span>
+                    <input type="text" id="Description">
+                </div>
+
+                <div id="pop_container">
+                    <span>status</span>
+                    <div class="choice">
+                        <div class="choice_container">
+                            <button onclick="check()" id="1">to do</button>
+                            <button onclick="check()" id="2"> in progress</button>
+                            <button onclick="check()" id="3"> stuck</button>
+                            <button onclick="check()" id="4">done</button>
+                        </div>      
+                    </div>
+                </div>
+
+                <div id="pop_container">
+                    <span>priority</span>
+                    <div class="choice">
+                        <div class="choice_container">
+                            <button onclick="check2()" id="high"> high</button>
+                            <button onclick="check2()" id="med"> med</button>
+                            <button onclick="check2()" id="low">low</button>
+                        </div>   
+                    </div>
+                </div>
+                <div id="add_task_button" onclick="add()"></div>
+            </div>   
+            
+
+            
+       
 
     </div>
-    
-
-    <script src="leet.js"></script>
-
-
-
+    <script src="/leet.js"></script>
 </body>
 </html>
